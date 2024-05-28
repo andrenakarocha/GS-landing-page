@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Oceans 20</title>
+</head>
+<body>
+    <header>
+        <h2 id="titulo">Oceans O20</h2>
+        <div class="off-screen-menu">
+            <ul>
+                <a href="#">O Problema</a>
+                <a href="#">Tecnologia</a>
+                <a href="#">Objetivos</a>
+                <a href="#">Público Impactado</a>
+                <a href="#">Benefícios</a>
+                <a href="#">Dia a Dia</a>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section" id="section-1">
+            <h1>O Problema</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+        <div class="section" id="section-2">
+            <h1>Tecnologia Utilizada</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+        <div class="section" id="section-3">
+            <h1>Objetivos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+        <div class="section" id="section-4">
+            <h1>Público Impactado</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+        <div class="section" id="section-5">
+            <h1>Benefícios</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+        <div class="section" id="section-6">
+            <h1>Dia a Dia</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>O projeto Oceans O20 visa trazer soluções inovadoras para problemas ambientais relacionados aos oceanos. Nossa missão é promover a sustentabilidade e a conservação marinha.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: contato@oceanso20.org</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <button type="submit" id="btnFormFooter">Contate-nos!</button>
+                <div class="socials">
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Oceans O20 | Todos os direitos reservados
+        </div>
+    </footer>
+
+    <div id="popup" class="hidden">
+        <div id="popup-content">
+            <form id="form" onsubmit="event.preventDefault(); validarForm()">
+                <h1>Contate-nos!</h1>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu Nome">
+                <small class="erro"></small>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Seu Email">
+                <small class="erro"></small>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Sua Mensagem" rows="6"></textarea>
+                <small class="erro"></small>
+
+                <div class="centro">
+                    <input type="submit" id="btn-form" value="Enviar Mensagem">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
