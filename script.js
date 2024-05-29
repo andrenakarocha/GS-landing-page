@@ -12,6 +12,10 @@ const errorNodes = document.querySelectorAll('.erro');
 const btnFooter = document.querySelector('#btnFormFooter');
 const popup = document.querySelector('#popup');
 
+// Carrossel 
+const wrapper = document.querySelector('#wrapper-holder');
+const navButtons = document.querySelectorAll('#slider-navigation button');
+
 // Validar Form
 function validarForm() {
     limparMensagens();
@@ -72,3 +76,25 @@ popup.addEventListener('click', function (event) {
         popup.classList.remove('active');
     }
 });
+
+// Carrossel
+let sliderAtual = 0;
+const totalSlides = 4;
+
+function updateSlider(index) {
+    wrapper.style.transform = `translateX(-${index * 100}%)`;
+    navButtons.forEach(btn => btn.classList.remove('active'));
+    navButtons[index].classList.add('active');
+}
+
+navButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        sliderAtual = index;
+        updateSlider(sliderAtual);
+    });
+});
+
+setInterval(() => {
+    sliderAtual = (sliderAtual + 1) % totalSlides;
+    updateSlider(sliderAtual);
+}, 5000);
