@@ -8,28 +8,40 @@
     --primary-color: #23262e; 
     --background-color: #F0F8FF; 
     --text-color: #FFFFFF; 
-    --hover-color: #4682B4;
-    --section-even: url(img/background-img.png); 
-    --section-odd: #2e5368;
+    --hover-color: #4682B4; 
+    --section-even: #1f3974;
+    --section-odd: #339fdd;
     --erro-color: #e21111;
     --sucesso-color: #28a745;
     --form-hover-color: #1f40aa;
 }
 
-body {
+body { 
     font-family: 'Arial', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
-
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     background-color: var(--primary-color);
+    width: 100%;
     justify-content: space-between;
     padding: 0 1rem;
+    position: fixed;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+main {
+    padding-top: 80px;
 }
 
 nav {
@@ -59,20 +71,20 @@ a:hover {
     display: flex;
     flex-direction: row;
     font-size: 25px;
-    padding-top: 25px;
     color: white;
+    margin: 0;
 }
 
-
 .section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .section:nth-child(even) {
-    background-image: var(--section-even);
-    background-size: 1000px;
+    background-color: var(--section-even);
     color: var(--text-color);
 }
 
@@ -89,103 +101,25 @@ a:hover {
 .section p {
     font-size: 1.2rem;
     line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Carrossel Início */
-.slider .wrapper {
-    width: 800px;
+.texto-section {
+    margin-right: 150px;
+    max-width: 750px;
+}
+
+.texto-section h1 {
+    margin-bottom: 1rem;
+}
+
+
+.img-section {
+    width: 600px;
     height: 400px;
-    box-shadow: 10px 10px 20px rgba(0 , 0, 0, 0.6);
-    border-radius: 10px;
-    margin: 5rem auto;
-    overflow: hidden;
 }
-.slider .wrapper-holder {
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
-    animation: slider 30s ease-in-out infinite alternate;
-}
-
-.slider #slider-img-1 {
-    background-image: url(img/slider1.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.slider #slider-img-2 {
-    background-image: url(img/slider2.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.slider #slider-img-3 {
-    background-image: url(img/slider3.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.slider #slider-img-4 {
-    background-image: url(img/slider4.png);
-    background-position: center;
-    background-size: cover;
-}
-
-@keyframes slider {
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
-}
-
-.slider-navigation {
-    text-align: center;
-    margin-top: -50px;
-}
-.slider-navigation button {
-    background-color: var(--primary-color);
-    border: none;
-    margin: 0 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-.slider-navigation button.active {
-    background-color: var(--hover-color);
-}
-
-
-@media screen and (max-width: 600px) {
-    .slider {
-        position: relative;
-    }
-    
-    .slider .wrapper {
-        width: 300px;
-        height: 500px;
-        box-shadow: 10px 10px 20px rgba(0 , 0, 0, 0.6);
-        border-radius: 10px;
-        margin: 5rem auto;
-        overflow: hidden;
-    }
-    .slider .wrapper-holder {
-        display: grid;
-        grid-template-columns: repeat(4, 100%);
-        height: 100%;
-        width: 100%;
-        animation: slider 30s ease-in-out infinite alternate;
-    }
-
-}
-/* Carrossel Fim */
 
 
 /* Menu Hamburguer Início */
@@ -194,13 +128,12 @@ a:hover {
     width: 50px;
     margin-left: auto;
     position: relative;
-    z-index: 1;
 }
 
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: var(--section-odd);
+    background-color: rgb(21, 132, 206);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -231,7 +164,6 @@ a:hover {
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
-    z-index: 1;
 }
 
 .off-screen-menu.active {

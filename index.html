@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oceans O20 - Soluções inovadoras para problemas ambientais relacionados aos oceanos, promovendo sustentabilidade e conservação marinha.">
+    <link rel="shortcut icon" type="image" href="img/icon.png">
     <link rel="stylesheet" href="styles.css">
     <title>Oceans 20</title>
 </head>
 <body>
     <header>
+        <img src="img/icon.png" alt="icone">
         <h2 id="titulo">Oceans O20</h2>
         <div class="off-screen-menu">
             <ul>
-                <li><a href="#">O Problema</a></li>
-                <li><a href="#">Tecnologia</a></li>
-                <li><a href="#">Objetivos</a></li>
-                <li><a href="#">Público Impactado</a></li>
-                <li><a href="#">Benefícios</a></li>
-                <li><a href="#">Dia a Dia</a></li>
+                <a href="#">O Problema</a>
+                <a href="#">Tecnologia</a>
+                <a href="#">Objetivos</a>
+                <a href="#">Público Impactado</a>
+                <a href="#">Benefícios</a>
+                <a href="#">Dia a Dia</a>
             </ul>
         </div>
         <nav>
@@ -30,62 +31,47 @@
     </header>
 
     <main>
-        <div class="section" id="intro">
-            <h1>Oceans O20</h1>
-            
-            <section id="section-2">
-                <img src="" alt="" srcset="">
-                <div id="slider">
-                    <div id="wrapper">
-                        <div id="wrapper-holder">
-                            <div id="slider-img-1" aria-label="Descrição da imagem 1"></div>
-                            <div id="slider-img-2" aria-label="Descrição da imagem 2"></div>
-                            <div id="slider-img-3" aria-label="Descrição da imagem 3"></div>
-                            <div id="slider-img-4" aria-label="Descrição da imagem 4"></div>
-                        </div>
-                    </div>
-                    <div id="slider-navigation">
-                        <button id="active"></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                    </div>
-                </div>
-                
-            </section>
-            
-        </div>
-
-        </div>
         <div class="section" id="section-1">
-            <h1>O Problema</h1>
-            <p></p>
-            <p></p>
+            <div class="texto-section">
+                <h1>O Problema</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
         <div class="section" id="section-2">
-            <h1>Tecnologia Utilizada</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+            <div class="texto-section"> 
+                <h1>Tecnologia Utilizada</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
         <div class="section" id="section-3">
-            <h1>Objetivos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+            <div class="texto-section"> 
+                <h1>Objetivos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
         <div class="section" id="section-4">
-            <h1>Público Impactado</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+            <div class="texto-section"> 
+                <h1> Público Impactado</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
         <div class="section" id="section-5">
-            <h1>Benefícios</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+            <div class="texto-section"> 
+                <h1>Benefícios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
         <div class="section" id="section-6">
-            <h1>Dia a Dia</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem!</p>
+            <div class="texto-section"> 
+                <h1>Dia a Dia</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            </div>
+            <img src="" alt="" class="img-section">
         </div>
     </main>
 
@@ -108,4 +94,33 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2024 Oceans O20 | Todos os
+            &copy; 2024 Oceans O20 | Todos os direitos reservados
+        </div>
+    </footer>
+
+    <div id="popup" class="hidden">
+        <div id="popup-content">
+            <form id="form" onsubmit="event.preventDefault(); validarForm()">
+                <h1>Contate-nos!</h1>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu Nome">
+                <small class="erro"></small>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Seu Email">
+                <small class="erro"></small>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Sua Mensagem" rows="6"></textarea>
+                <small class="erro"></small>
+
+                <div class="centro">
+                    <input type="submit" id="btn-form" value="Enviar Mensagem">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
