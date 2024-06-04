@@ -12,6 +12,23 @@ const errorNodes = document.querySelectorAll('.erro');
 const btnFooter = document.querySelector('#btnFormFooter');
 const popup = document.querySelector('#popup');
 
+// Carrossel
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function () {
+    nextImage();
+}, 4000);
+
+function nextImage () {
+    count++;
+    if(count > 4){
+        count = 1;
+    }
+
+    document.getElementById("radio" + count).checked = true;
+};
+
 // Validar Form
 function validarForm() {
     limparMensagens();
@@ -72,3 +89,4 @@ popup.addEventListener('click', function (event) {
         popup.classList.remove('active');
     }
 });
+

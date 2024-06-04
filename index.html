@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image" href="img/icon.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>Oceans 20</title>
 </head>
 <body>
@@ -13,12 +14,13 @@
         <h2 id="titulo">Oceans O20</h2>
         <div class="off-screen-menu">
             <ul>
-                <a href="#">O Problema</a>
-                <a href="#">Tecnologia</a>
-                <a href="#">Objetivos</a>
-                <a href="#">Público Impactado</a>
-                <a href="#">Benefícios</a>
-                <a href="#">Dia a Dia</a>
+                <a href="#section-1">O Projeto</a>
+                <a href="#section-2"">O Problema</a>
+                <a href="#section-3"">Tecnologia</a>
+                <a href="#section-4"">Objetivos</a>
+                <a href="#section-5"">Público Impactado</a>
+                <a href="#section-6"">Benefícios</a>
+                <a href="#section-7"">Dia a Dia</a>
             </ul>
         </div>
         <nav>
@@ -33,45 +35,86 @@
     <main>
         <div class="section" id="section-1">
             <div class="texto-section">
-                <h1>O Problema</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+                <h1>O Projeto</h1>
+                <p>Oceans O20 é uma iniciativa inovadora que visa a conscientização e a ação sobre a poluição marinha. Combinando tecnologia e educação, buscamos envolver a comunidade e empresas na preservação dos oceanos. Nosso projeto utiliza sensores de coleta de dados, processamento de informações e visualização interativa para monitorar a saúde dos mares e promover práticas sustentáveis.</p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="img/carrossel-1.jpg" alt="img-1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/carrossel-2.jpg" alt="img-2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/carrossel-3.jpg" alt="img-3">
+                    </div>
+                    <div class="slide">
+                        <img src="img/carrossel-4.jpg" alt="img-4">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
         </div>
         <div class="section" id="section-2">
-            <div class="texto-section"> 
-                <h1>Tecnologia Utilizada</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+            <div class="texto-section">
+                <h1>O Problema</h1>
+                <p>A poluição dos mares é um dos maiores desafios ambientais da atualidade. Milhões de toneladas de plástico, produtos químicos e outros resíduos são despejados nos oceanos todos os anos, ameaçando a vida marinha e a saúde humana. Além disso, a sobrepesca e a destruição de habitats naturais estão colocando diversas espécies em risco de extinção. É crucial agir agora para reverter esse cenário e proteger nossos ecossistemas marinhos.</p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <img src="img/o-problema.svg" alt="o-problema" class="img-section">
         </div>
         <div class="section" id="section-3">
             <div class="texto-section"> 
-                <h1>Objetivos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+                <h1>Tecnologia Utilizada</h1>
+                <p>Utilizamos uma combinação de sensores conectados ao Arduino para coleta de dados sobre temperatura e PH da água. Esses dados são processados e armazenados em arquivos de texto, permitindo análise posterior com scripts em Python. </p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <img src="img/tecnologia-utilizada.svg" alt="tecnologia-utilizada" class="img-section">
         </div>
         <div class="section" id="section-4">
             <div class="texto-section"> 
-                <h1> Público Impactado</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+                <h1>Objetivos</h1>
+                <p>Nossos objetivos incluem aumentar a conscientização sobre a poluição marinha, promover a educação ambiental e incentivar a adoção de práticas sustentáveis por parte de empresas e indivíduos. Pretendemos fornecer dados precisos e acessíveis sobre a saúde dos oceanos, facilitando a tomada de decisões informadas e ações concretas para a preservação dos ecossistemas marinhos.</p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <img src="img/objetivos.svg" alt="objetivos" class="img-section">
         </div>
         <div class="section" id="section-5">
             <div class="texto-section"> 
-                <h1>Benefícios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+                <h1>Público Impactado</h1>
+                <p>Nosso projeto tem como público-alvo a comunidade em geral, incluindo estudantes, educadores, ambientalistas e empresas. Queremos envolver jovens e adultos na luta pela conservação dos oceanos, proporcionando ferramentas educacionais e dados relevantes que incentivem a mudança de comportamento e práticas empresariais mais sustentáveis.</p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <img src="img/publico-impactado.svg" alt="público-impactado" class="img-section">
         </div>
         <div class="section" id="section-6">
             <div class="texto-section"> 
-                <h1>Dia a Dia</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium!</p>
+                <h1>Benefícios</h1>
+                <p>Os benefícios do projeto incluem a melhoria da qualidade da água, a proteção da vida marinha e a promoção de um ambiente mais saudável para todos. Além disso, ao conscientizar a população e empresas sobre a importância da sustentabilidade, contribuímos para a criação de uma cultura de respeito e cuidado com os recursos naturais. A longo prazo, essas ações podem levar a uma redução significativa da poluição e à recuperação dos ecossistemas marinhos.</p>            
             </div>
-            <img src="" alt="" class="img-section">
+            <img src="img/beneficios.svg" alt="benefícios" class="img-section">
+        </div>
+        <div class="section" id="section-7">
+            <div class="texto-section"> 
+                <h1>Dia a Dia</h1>
+                <p>No dia a dia, o projeto Oceans O20 busca envolver a comunidade através de atividades educativas, campanhas de limpeza de praias e monitoramento contínuo da qualidade da água. Utilizando nossa plataforma interativa, os usuários podem acompanhar em tempo real os dados sobre a saúde dos oceanos e participar ativamente de iniciativas de conservação. A educação ambiental é uma ferramenta poderosa para transformar comportamentos e proteger o nosso planeta.</p>            
+            </div>
+            <img src="img/dia-a-dia.svg" alt="dia-a-dia" class="img-section">
         </div>
     </main>
 
@@ -87,9 +130,9 @@
                 <p>Telefone: (11) 1234-5678</p>
                 <button type="submit" id="btnFormFooter">Contate-nos!</button>
                 <div class="socials">
-                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+                    <i class="ri-facebook-box-line"></i>
+                    <i class="ri-twitter-x-line"></i>
+                    <i class="ri-instagram-line"></i>
                 </div>
             </div>
         </div>
