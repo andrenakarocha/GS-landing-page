@@ -123,8 +123,9 @@ a:hover {
 
 
 .img-section {
-    width: 900px;
+    width: 700px;
     height: 400px;
+    padding-top: 60px;
 }
 
 
@@ -194,6 +195,7 @@ a:hover {
 
 /* Carrossel Início */
 .slider {
+    padding-top: 30px;
     margin: 0 auto;
     width: 700px;
     height: 400px;
@@ -454,3 +456,150 @@ footer {
 }
 
 /* Footer Fim */
+
+/* Responsividade Início */
+
+  @media only screen and (max-width: 480px) {
+
+    header {
+      width: 100vw;
+      position: fixed;
+    }
+
+    .off-screen-menu {
+        height: 400px;
+        width: 300px;
+        margin-top: 80px;
+    }
+
+    .off-screen-menu a {
+        font-size: 16px;
+    }
+
+    .section {
+        padding-bottom: 0px;
+        padding-top: 70px;
+    }
+
+    .img-section {
+        width: 350px;
+        height: 350px;
+    }
+
+    #titulo {
+      font-size: 16px;
+    }
+
+    .texto-section p {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .slider {
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 100vw;
+        min-width: 100vw;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+
+    .slides {
+        width: 100vw;
+        display: flex;
+    }
+
+    .slide {
+        width: auto;
+        max-width: 100%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .slide img {
+        width: 100vw;
+        height: 300px;
+    }
+
+    .manual-navigation {
+        width: 100vw;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #FFF;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .manual-btn:hover {
+        background-color: #FFF;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -100%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -200%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -300%;
+    }
+
+    .navigation-auto div{
+        border: 2px solid #20a6ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto {
+        width: 100vw;
+        margin-top: 360px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1 {
+        background-color: #FFF;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2 {
+        background-color: #FFF;
+    }
+
+    #radio3:checked ~ .navigation-auto .auto-btn3 {
+        background-color: #FFF;
+    }
+
+    #radio4:checked ~ .navigation-auto .auto-btn4 {
+        background-color: #FFF;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+
+  }
+
+  /* Reponsividade Fim */
