@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root {
-    --primary-color: #23262e; 
+    --primary-color: #23262e;
     --background-color: #F0F8FF; 
     --text-color: #FFFFFF; 
     --hover-color: #4682B4; 
